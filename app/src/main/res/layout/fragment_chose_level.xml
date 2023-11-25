@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ChoseLevelFragment">
+
+    <ImageButton
+        android:id="@+id/people_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/people"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/people_setting1x1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/people"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/people_setting1x2"
+        app:layout_constraintTop_toTopOf="@+id/people_setting1x2" />
+
+    <ImageButton
+        android:id="@+id/people_setting1x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/people"
+        app:layout_constraintEnd_toStartOf="@+id/people_setting1x3"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toEndOf="@+id/people_setting1x1"
+        app:layout_constraintTop_toBottomOf="@+id/people_setting" />
+
+    <ImageButton
+        android:id="@+id/people_setting1x3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/people"
+        app:layout_constraintStart_toStartOf="@id/people_setting1x2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/people_setting1x2" />
+
+    <TextView
+        android:id="@+id/tv_1vs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/_1vs1"
+        app:layout_constraintEnd_toEndOf="@+id/people_setting1x1"
+        app:layout_constraintStart_toStartOf="@+id/people_setting1x1"
+        app:layout_constraintTop_toBottomOf="@+id/people_setting1x1" />
+
+    <TextView
+        android:id="@+id/tv_1x2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/_1vs2"
+        app:layout_constraintEnd_toEndOf="@+id/people_setting1x2"
+        app:layout_constraintStart_toStartOf="@+id/people_setting1x2"
+        app:layout_constraintTop_toBottomOf="@+id/people_setting1x2" />
+
+    <TextView
+        android:id="@+id/tv_1vs3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/_1vs3"
+        app:layout_constraintEnd_toEndOf="@+id/people_setting1x3"
+        app:layout_constraintStart_toStartOf="@+id/people_setting1x3"
+        app:layout_constraintTop_toBottomOf="@+id/people_setting1x3" />
+
+    <ImageButton
+        android:id="@+id/heart_bottom"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/heart_broken"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/people_setting" />
+
+    <TextView
+        android:id="@+id/tv_life_sett"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_40"
+        android:textSize="96sp"
+        app:layout_constraintEnd_toEndOf="@+id/heart_bottom"
+        app:layout_constraintStart_toStartOf="@+id/heart_bottom"
+        app:layout_constraintTop_toBottomOf="@+id/heart_bottom" />
+
+    <TextView
+        android:id="@+id/tv_life_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:layout_marginEnd="20dp"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_life_sett"
+        app:layout_constraintEnd_toStartOf="@+id/tv_life_sett"
+        app:layout_constraintTop_toBottomOf="@+id/heart_bottom" />
+
+    <TextView
+        android:id="@+id/tv_life_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus"
+        android:layout_marginStart="20dp"
+        android:textSize="96sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_life_sett"
+        app:layout_constraintStart_toEndOf="@+id/tv_life_sett"
+        app:layout_constraintTop_toBottomOf="@+id/heart_bottom" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="29dp"
+        android:textSize="45sp"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

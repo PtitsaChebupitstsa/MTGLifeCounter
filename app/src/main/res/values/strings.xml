@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MTGLifeCounter</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_1vs1">1vs1</string>
+    <string name="_1vs2">1vs2</string>
+    <string name="_1vs3">1vs3</string>
+    <string name="_40">40</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="start">Start</string>
+</resources>
